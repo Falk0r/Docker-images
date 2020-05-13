@@ -10,6 +10,6 @@ RUN apt update -yq\
 
 ADD ./data /var/www/html
 
-VOLUME ./data:/var/www/html
+VOLUME ./data/:/var/www/html
 
-CMD service apache2 start
+CMD sudo service apache2 start
